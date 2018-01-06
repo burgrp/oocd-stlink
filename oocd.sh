@@ -1,6 +1,7 @@
 #!/bin/sh
-#OOCD_HOME=~/git/openocd
-#$OOCD_HOME/src/
-set -e
-openocd -f oocd.cfg
-# -s $OOCD_HOME/tcl/
+
+while true
+do
+    openocd -f `dirname $0`/oocd.cfg
+    sleep 1
+done
